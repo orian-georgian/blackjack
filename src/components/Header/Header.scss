@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+
+.bj-header {
+  width: 100%;
+  min-height: 180px;
+  padding: 20px 30px 0;
+  justify-content: space-between;
+
+  .bj-logo {
+    height: 70px;
+  }
+
+  .navigation-list {
+    padding: 0;
+
+    .list-item {
+      padding: 10px 30px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 18px;
+      transition: all 0.3s ease-in-out;
+
+      &.selected {
+        background-color: $fire;
+        border-radius: 30px;
+      }
+
+      &:not(.selected):hover {
+        color: $fire;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .bj-header {
+    .bj-logo {
+      height: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bj-header {
+    padding: 20px 20px 0;
+    justify-content: center;
+
+    .bj-logo {
+      height: 50px;
+    }
+  }
+}

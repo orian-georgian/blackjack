@@ -1,0 +1,18 @@
+@import "./styles/fonts.scss";
+
+body {
+  margin: 0;
+  font-family: "Asap";
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+
+.bj-player {
+  position: relative;
+
+  .bj-score {
+    .circle {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+
+      &.green {
+        box-shadow: 0px 0px 1px 1px $grass;
+        background-color: $grass;
+      }
+
+      &.red {
+        box-shadow: 0px 0px 1px 1px $fire;
+        background-color: $fire;
+      }
+
+      &.gray {
+        background-color: $normal-gray;
+      }
+
+      &.pulse {
+        animation: pulse-animation 2s infinite;
+      }
+    }
+  }
+
+  .bj-cards {
+    min-height: 215px;
+
+    .bj-card {
+      width: 150px;
+      position: absolute;
+    }
+
+    .card-image {
+      width: 100%;
+      border-radius: 10px;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        transform: scale(1.2);
+        z-index: 22;
+      }
+    }
+  }
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(52, 140, 49, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(52, 140, 49, 0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bj-player {
+    align-items: center;
+    .bj-cards {
+      min-height: 175px;
+
+      .bj-card {
+        width: 120px;
+      }
+    }
+  }
+}

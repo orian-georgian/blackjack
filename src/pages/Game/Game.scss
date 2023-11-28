@@ -1,0 +1,37 @@
+.bj-game {
+  width: 100%;
+  padding: 50px 30px 80px;
+
+  .bj-board {
+    width: 100%;
+  }
+
+  .bj-dealer {
+    margin-left: auto;
+
+    .bj-dealer-image {
+      max-height: 80vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bj-game {
+    flex-direction: column;
+
+    .bj-dealer {
+      margin-left: 0;
+      text-align: center;
+
+      .bj-dealer-image {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bj-game {
+    padding: 50px 20px 80px;
+  }
+}

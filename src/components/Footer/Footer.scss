@@ -1,0 +1,68 @@
+@import "./../../styles/variables.scss";
+
+.bj-footer {
+  width: 100%;
+  gap: 50px;
+  padding: 30px;
+  margin-top: auto;
+
+  .bj-copyright {
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    opacity: 0.2;
+  }
+
+  .bj-column {
+    .bj-subtitle {
+      margin-bottom: 30px;
+      font-size: 14px;
+      opacity: 0.2;
+    }
+
+    .bj-symbol {
+      margin-top: 20px;
+
+      .bj-message {
+        font-size: 20px;
+        text-decoration: underline;
+      }
+
+      .bj-icon {
+        width: 60px;
+        margin-left: -10px;
+      }
+    }
+
+    .bj-social {
+      .bj-icon {
+        width: 42px;
+        transition: transform 0.3s ease-in;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .bj-links {
+      a {
+        color: $all_white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          color: $fire;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bj-footer {
+    padding: 20px;
+  }
+}

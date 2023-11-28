@@ -1,0 +1,53 @@
+@import "../../styles/variables.scss";
+
+.bj-statistics {
+  padding: 20px 30px 100px;
+
+  .bj-games-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+
+    thead th,
+    tbody td {
+      text-align: left;
+      padding: 10px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .bj-loading-row {
+      td {
+        text-align: center;
+        padding: 100px 30px;
+      }
+    }
+
+    .bj-game-card {
+      max-width: 50px;
+      margin-right: 3px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bj-statistics {
+    .bj-games-table {
+      thead th,
+      tbody td {
+        padding: 10px 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bj-statistics {
+    padding: 20px 20px 100px;
+    .bj-games-table {
+      .bj-game-card {
+        max-width: 30px;
+        margin-right: 2px;
+      }
+    }
+  }
+}

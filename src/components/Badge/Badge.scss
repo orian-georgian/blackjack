@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.badge {
+  padding: 5px 15px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: $all-white;
+  border-radius: 4px;
+
+  &.bust {
+    background: $normal-gray;
+  }
+
+  &.tie {
+    background: $orange;
+  }
+
+  &.winner {
+    background: $grass;
+  }
+
+  &.lost {
+    background: $fire;
+  }
+}

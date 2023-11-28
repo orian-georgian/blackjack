@@ -1,0 +1,9 @@
+.bj-table {
+  min-height: 650px;
+}
+
+@media only screen and (max-width: 480px) {
+  .bj-table {
+    margin-bottom: 30px;
+  }
+}

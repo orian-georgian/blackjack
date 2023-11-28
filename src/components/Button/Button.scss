@@ -1,0 +1,77 @@
+@import "../../styles/variables.scss";
+
+.bj-button {
+  padding: 6px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 3px;
+  line-height: 14px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  &.contained {
+    color: $all-white;
+
+    &.default {
+      background: $all-white;
+      color: $background-gray;
+    }
+
+    &.fire {
+      background: $fire;
+    }
+  }
+
+  &.outlined {
+    background: transparent;
+    border: 1px solid;
+
+    &.default {
+      border-color: $all-white;
+      color: $all-white;
+    }
+
+    &.fire {
+      border-color: $fire;
+      color: $fire;
+    }
+  }
+
+  &.rounded {
+    border-radius: 30px;
+  }
+
+  &.large {
+    font-size: 20px;
+    padding: 20px 64px;
+  }
+
+  &.normal {
+    font-size: 18px;
+    padding: 16px 32px;
+    min-width: 150px;
+  }
+
+  &:not(:disabled):hover {
+    opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bj-button {
+    &.normal {
+      min-width: 200px;
+    }
+  }
+}
